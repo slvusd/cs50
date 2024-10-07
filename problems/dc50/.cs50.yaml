@@ -1,0 +1,5 @@
+submit50:
+  files: &submit50_files
+    - !exclude "*"
+    - !include dc50.c
+    - !require dc50.c
