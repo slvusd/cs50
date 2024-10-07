@@ -16,3 +16,13 @@ def one_plus_one():
     """adds 1 plus 1"""
     check50.run("./dc50 1 1 +").stdout("2").exit(0)
 
+@check50.check(compiles)
+def three_minus_one():
+    """subtract 1 from 3"""
+    check50.run("./dc50 3 1 -").stdout("2").exit(0)
+
+@check50.check(compiles)
+def nineteen_modulo_three():
+    """19 % 3"""
+    check50.run("./dc50 19 3 %").stdout("1").exit(0)
+
