@@ -3,3 +3,7 @@ submit50:
     - !exclude "*"
     - !include dc50.c
     - !require dc50.c
+
+check50:
+  checks: __init__.py
+
