@@ -5,5 +5,8 @@ submit50:
     - !require dc50.c
 
 check50:
+  files:
+    - !exclude "*"
+    - !include dc50.c
   checks: __init__.py
 
