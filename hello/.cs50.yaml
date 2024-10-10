@@ -1,0 +1,12 @@
+submit50:
+  files: &submit50_files
+    - !exclude "*"
+    - !include hello.py
+    - !require hello.py
+
+check50:
+  files:
+    - !exclude "*"
+    - !include hello.py
+  checks: __init__.py
+
