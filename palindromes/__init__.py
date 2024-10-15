@@ -11,6 +11,11 @@ def compiles():
     """palindromes.c compiles"""
     check50.c.compile("palindromes.c")
 
+@check50.check(exists)
+def prints_hello_world():
+    """prints Hello, world!"""
+    check50.run("./palindromes").stdout("Hello, world!", regex=False).exit(0)
+
 
 @check50.check()
 def My_mom_has_a_very_level_civic():
