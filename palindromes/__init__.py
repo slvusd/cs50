@@ -11,22 +11,6 @@ def compiles():
     """palindromes.c compiles"""
     check50.c.compile("palindromes.c")
 
-@check50.check()
-def My_mom_has_a_very_level_civic():
-    """checks for palindromes"""
-    check50.run("./palindromes")
-    check50.run("My mom has a very level civic.").stdout()
-
-from re import match
- 
-expected = "3"
-actual = check50.run("python3 hello.py").stdout()
-if not match(expected, actual):
-    help = None
-if match(expected[:-1], actual):
-    help = r"not all palindromes listed or too many"
-    raise check50.Mismatch("3", actual, help=help)
-
 
 @check50.check(compiles)
 def My_mom_has_a_very_level_civic():
