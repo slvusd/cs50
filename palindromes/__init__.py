@@ -22,10 +22,10 @@ from re import match
 expected = "3"
 actual = check50.run("python3 hello.py").stdout()
 if not match(expected, actual):
-help = None
+    help = None
 if match(expected[:-1], actual):
-help = r"not all palindromes listed or too many"
-raise check50.Mismatch("3", actual, help=help)
+    help = r"not all palindromes listed or too many"
+    raise check50.Mismatch("3", actual, help=help)
 
 
 @check50.check(compiles)
