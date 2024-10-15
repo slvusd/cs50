@@ -11,7 +11,7 @@ def compiles():
     """palindromes.c compiles"""
     check50.c.compile("palindromes.c")
 
-@check50.check(check)
+@check50.check(check50)
 def My_mom_has_a_very_level_civic():
     """checks for palindromes"""
     check50.run("./palindromes")
