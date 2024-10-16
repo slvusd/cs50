@@ -11,19 +11,13 @@ def compiles():
     """palindromes.c compiles"""
     check50.c.compile("palindromes.c")
 
-@check50.check(exists)
-def prints_hello_world():
-    """prints Hello, world!"""
-    check50.run("./palindromes").stdout("Hello, world!", regex=False).exit(0)
-
-
-@check50.check()
+@check50.check(compiles)
 def My_mom_has_a_very_level_civic():
     """checks for palindromes"""
     check50.run("./palindromes")
     check50.run("My mom has a very level civic.").stdout("3").exit(0)
 
-@check50.check()
+@check50.check(compiles)
 def Did_my_mom_have_a_kayak():
     """checks for palindromes"""
     check50.run("Did my mom have a kayak?").stdout("3").exit(0)
