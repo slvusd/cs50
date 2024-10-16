@@ -14,7 +14,7 @@ def compiles():
 @check50.check(compiles)
 def My_mom_has_a_very_level_civic():
     """checks for palindromes"""
-    check50.run("./palindromes").stdin("My mom has a very level civic.").stdout("3").exit(0)
+    check50.run("./palindromes").stdin("My mom has a very level civic.\n").stdout("3").exit(0)
 
 @check50.check(compiles)
 def Did_my_mom_have_a_kayak():
