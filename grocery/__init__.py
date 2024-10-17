@@ -13,7 +13,7 @@ def test_output():
 @check50.check()
 def test_sep():
     """Validate student used sep= in a print statement"""
-    check50.run("grep 'sep=' grocery.py").exit(0)
+    check50.run("grep 'print.*sep=' grocery.py").exit(0)
 
 @check50.check()
 def test_name():
