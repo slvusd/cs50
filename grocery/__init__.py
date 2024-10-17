@@ -7,7 +7,7 @@ def exists():
 
 @check50.check()
 def test_output():
-    """Outputs 1"""
+    """Outputs per spec - comma separated list ending in a period."""
     check50.run("python3 grocery.py").stdin("banana").stdin("orange").stdin("apple").stdout("banana, orange, apple.").exit(0)
 
 @check50.check()
