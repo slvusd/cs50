@@ -17,6 +17,5 @@ def test_sep():
 
 @check50.check()
 def test_name():
-    """First line should have a comment containing the student's name"""
-    #check50.run("head -1 grocery.py | grep '#'").exit(0)
+    """First line should have a comment containing the student's first and last name"""
     check50.run("head -1 grocery.py").stdout("#\s*\w+\s+\w+")
