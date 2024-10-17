@@ -1,0 +1,11 @@
+submit50:
+  files: &submit50_files
+    - !exclude "*"
+    - !include p.c
+    - !require p.c
+
+check50:
+  files:
+    - !exclude "*"
+    - !include p.c
+  checks: __init__.py
