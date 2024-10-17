@@ -1,0 +1,11 @@
+submit50:
+  files: &submit50_files
+    - !exclude "*"
+    - !include grocery.py
+    - !require grocery.py
+
+check50:
+  files:
+    - !exclude "*"
+    - !include grocery.py
+  checks: __init__.py
