@@ -9,7 +9,7 @@ def exists():
 @check50.check()
 def compiles():
     """palindromes.c compiles"""
-    check50.run("clang palindromes.c -o palindromes -std=c11 -ggdb -lm -lcs50")
+    check50.c.compile("palindromes.c", lcs50=True)
 
 @check50.check(compiles)
 def my_mom_has_a_very_level_civic():

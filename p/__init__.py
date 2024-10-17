@@ -15,4 +15,4 @@ def compiles():
 @check50.check(compiles)
 def test1():
     """Outputs 1"""
-    check50.run("./p").stdin("1\n").stdout("1").exit(0)
+    check50.run("./p").stdin("1").stdout("1").exit(0)
