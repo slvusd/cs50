@@ -19,4 +19,4 @@ def test_sep():
 def test_name():
     """First line should have a comment containing the student's name"""
     #check50.run("head -1 grocery.py | grep '#'").exit(0)
-    check50.run("head -1 grocery.py | grep -E '#[[:space:]]*[[:alpha:]]+[[:space:]]+[[:alpha:]]+' || head -1 grocery.py && exit 1").exit(0)
+    check50.run("head -1 grocery.py").stdout("#\s*\w+\s+\w+")
