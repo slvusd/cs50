@@ -20,7 +20,7 @@ def my_mom_has_a_very_level_civic():
 @check50.check(compiles)
 def did_my_mom_have_a_kayak():
     """checks for palindromes"""
-    check50.run(./palindromes").stdin("Did my mom have a kayak?").stdout("3").exit(0)
+    check50.run("./palindromes").stdin("Did my mom have a kayak?").stdout("3").exit(0)
 
 '''
 @check50.check(compiles)
