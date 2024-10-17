@@ -9,9 +9,10 @@ def exists():
 @check50.check()
 def compiles():
     """p.c compiles"""
-    check50.c.compile("p.c")
+    check50.run("make p")
+    #check50.c.compile("p.c")
 
 @check50.check(compiles)
 def test1():
     """Outputs 1"""
-    check50.run("./p").stdout("1").exit(0)
+    check50.run("./p").stdin("1").stdout("1").exit(0)
