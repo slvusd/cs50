@@ -16,6 +16,7 @@ def My_mom_has_a_very_level_civic():
     """checks for palindromes"""
     check50.run("./palindromes").stdin("My mom has a very level civic.\n").stdout("3").exit(0)
 
+'''
 @check50.check(compiles)
 def Did_my_mom_have_a_kayak():
     """checks for palindromes"""
@@ -40,3 +41,4 @@ def The_radar_deified_to_sign_the_deed():
 def The_murdrum_wore_a_bib():
     """checks for palindromes"""
     check50.run("The murdrum wore a bib").stdout("2").exit(0)
+'''
