@@ -35,9 +35,9 @@ def My_cats_nickname_is_Tacocat():
 @check50.check(compiles)
 def The_radar_deified_to_sign_the_deed():
     """checks for palindromes"""
-    check50.run(./palindromes).stdin("The radar deified to sign the deed").stdout("3\n").exit(0)
+    check50.run("./palindromes").stdin("The radar deified to sign the deed").stdout("3\n").exit(0)
 
 @check50.check(compiles)
 def The_murdrum_wore_a_bib():
     """checks for palindromes"""
-    check50.run(./palindromes).stdin("The murdrum wore a bib").stdout("2\n").exit(0)
+    check50.run("./palindromes").stdin("The murdrum wore a bib").stdout("2\n").exit(0)
