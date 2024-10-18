@@ -15,3 +15,11 @@ def compiles():
 def drop_0():
     """basic average"""
     check50.run("./drop 3 0").stdin("100").stdin("90").stdin("80").stdout("average: 90").exit(0)
+
+@check50.check(compiles)
+def drop_1():
+    """Drop lowest grade"""
+    check50.run("./drop 4 1") \
+        .stdin("100").stdin("90").stdin("80").stdin("70") \
+            .stdout("average: 85").stdout("drops: 70").stdout("drop average: 90") \
+                .exit(0)
