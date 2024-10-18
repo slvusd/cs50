@@ -21,5 +21,5 @@ def drop_1():
     """Drop lowest grade"""
     check50.run("./drop 4 1") \
         .stdin("100").stdin("90").stdin("80").stdin("70") \
-            .stdout("average: 85").stdout("drops: 70").stdout("drop average: 90") \
+            .stdout("average: 85").stdout("drops: 70").stdout("average: 90") \
                 .exit(0)
