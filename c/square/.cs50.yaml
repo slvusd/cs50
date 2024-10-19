@@ -1,0 +1,11 @@
+submit50:
+  files: &submit50_files
+    - !exclude "*"
+    - !include square.c
+    - !require square.c
+
+check50:
+  files:
+    - !exclude "*"
+    - !include square.c
+  checks: square.py
