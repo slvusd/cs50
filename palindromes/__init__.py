@@ -28,6 +28,11 @@ def How_was_your_race():
     check50.run("./palindromes").stdin("How was your race? I heard your racecar broke?").stdout("1\n").exit(0)
 
 @check50.check(compiles)
+def Skibidi_rizzler():
+    """checking for 0 palindromes"""
+    check50.run("./palindromes").stdin("Are you a Skibidi Rizzler?").stdout("0\n").exit(0)
+
+@check50.check(compiles)
 def My_cats_nickname_is_Tacocat():
     """checking for 1 palindromes"""
     check50.run("./palindromes").stdin("My cats nickname is Tacocat, because he sure does loves tacos!").stdout("1\n").exit(0)
