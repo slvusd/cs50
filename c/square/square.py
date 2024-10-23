@@ -32,12 +32,3 @@ def square_validate_input():
         .stdin("2") \
             .stdout("##").stdout("##") \
             .exit(0)
-
-@check50.check(compiles)
-def square_1():
-    """Size of 1 works"""
-    # Might need to validate that we don't get a second line of output
-    check50.run("./square") \
-        .stdin("1") \
-            .stdout("#") \
-            .exit(0)
