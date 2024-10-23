@@ -1,0 +1,11 @@
+submit50:
+  files: &submit50_files
+    - !exclude "*"
+    - !include mysort.c
+    - !require mysort.c
+
+check50:
+  files:
+    - !exclude "*"
+    - !include mysort.c
+  checks: mysort.py
