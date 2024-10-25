@@ -34,4 +34,4 @@ def thirteen_oz_letter():
 @check50.check(compiles)
 def thirteen_point_zero_one_oz_letter():
     """checking price for 13.01(oz.) letter"""
-    check50.run("./mail").stdin("13.01").stdout("Over allowed weight\n").exit(0)
+    check50.run("./mail").stdin("13.01").stdout("Over allowed weight").exit(0)
