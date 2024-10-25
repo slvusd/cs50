@@ -1,1 +1,11 @@
-temp
+submit50:
+  files: &submit50_files
+    - !exclude "*"
+    - !include mail.c
+    - !require mail.c
+
+check50:
+  files:
+    - !exclude "*"
+    - !include mail.c
+  checks: __init__.py
