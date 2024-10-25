@@ -1,1 +1,11 @@
+submit50:
+  files: &submit50_files
+    - !exclude "*"
+    - !include password.c
+    - !require password.c
 
+check50:
+  files:
+    - !exclude "*"
+    - !include password.c
+  checks: __init__.py
