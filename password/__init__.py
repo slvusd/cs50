@@ -9,7 +9,7 @@ def exists():
 @check50.check()
 def compiles():
     """password.c compiles"""
-    check50.c.compile("password.c", lcs50=True)
+    check50.c.compile("password.c", lcs50=False)
 
 @check50.check(compiles)
 def very_weak():
