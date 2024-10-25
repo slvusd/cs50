@@ -14,7 +14,7 @@ def compiles():
 @check50.check(compiles)
 def one_oz_letter():
     """checking price for 1(oz.) letter"""
-    check50.run("./mail").stdin("1").stdout("$1\n").exit(0)
+    check50.run("./mail").stdin("1").stdout("$1.00\n").exit(0)
 
 @check50.check(compiles)
 def two_point_five_oz_letter():
@@ -29,9 +29,9 @@ def twelve_point_thirtyfour_oz_letter():
 @check50.check(compiles)
 def thirteen_oz_letter():
     """checking price for 13(oz.) letter"""
-    check50.run("./mail").stdin("13").stdout("$3.4\n").exit(0)
+    check50.run("./mail").stdin("13").stdout("$3.40\n").exit(0)
 
 @check50.check(compiles)
 def thirteen_point_zero_one_oz_letter():
     """checking price for 13.01(oz.) letter"""
-    check50.run("./mail").stdin("13.01").stdout("$3.4\n").exit(0)
+    check50.run("./mail").stdin("13.01").stdout("$3.40\n").exit(0)
