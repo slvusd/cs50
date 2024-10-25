@@ -14,7 +14,7 @@ def compiles():
 @check50.check(compiles)
 def one_oz_letter():
     """checking price for 1(oz.) letter"""
-    check50.run("./mail").stdin("1").stdout("$1.00\n").exit(0)
+    check50.run("./mail").stdin("1").stdout("\$1.00\n").exit(0)
 
 @check50.check(compiles)
 def two_point_five_oz_letter():
