@@ -3,12 +3,12 @@ import check50.c
 
 @check50.check()
 def exists():
-    """palindromes.c exists"""
+    """password.c exists"""
     check50.exists("password.c")
 
 @check50.check()
 def compiles():
-    """palindromes.c compiles"""
+    """password.c compiles"""
     check50.c.compile("password.c", lcs50=True)
 
 @check50.check(compiles)
