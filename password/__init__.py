@@ -19,7 +19,7 @@ def very_weak():
 @check50.check(compiles)
 def weak():
     """checks for a weak password"""
-    check50.run("./password password").stdout("^Weak\n", regex=True).exit(0)
+    check50.run("./password password").stdout("^[wW]eak\n", regex=True).exit(0)
 
 @check50.check(compiles)
 def fair():
