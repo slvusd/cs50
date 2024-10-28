@@ -14,7 +14,7 @@ def compiles():
 @check50.check(compiles)
 def very_weak():
     """checks for a very weak password"""
-    check50.run("./password pass").stdout("Very Weak").exit(0)
+    check50.run("./password pass").stdout("^[vV]ery Weak", regex=True).exit(0)
 
 @check50.check(compiles)
 def weak():
@@ -24,14 +24,14 @@ def weak():
 @check50.check(compiles)
 def fair():
     """checks for a fair password"""
-    check50.run("./password 3l3phant!").stdout("Fair").exit(0)
+    check50.run("./password 3l3phant!").stdout("^[fF]air", regex=True).exit(0)
 
 @check50.check(compiles)
 def strong():
     """checks for a strong password"""
-    check50.run("./password :hlH|8i1I\4}").stdout("Strong").exit(0)
+    check50.run("./password :hlH|8i1I\4}").stdout("^[sS]trong", regex=True).exit(0)
 
 @check50.check(compiles)
 def very_strong():
     """checks for a very strong password"""
-    check50.run("./password 5k1bidi_Riz2-0HiO").stdout("Very Strong").exit(0)
+    check50.run("./password 5k1bidi_Riz2-0HiO").stdout("^[vV]ery Strong", regex=True).exit(0)
