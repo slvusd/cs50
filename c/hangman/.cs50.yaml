@@ -1,0 +1,11 @@
+submit50:
+  files: &submit50_files
+    - !exclude "*"
+    - !include hangman.c
+    - !require hangman.c
+
+check50:
+  files:
+    - !exclude "*"
+    - !include hangman.c
+  checks: hangman.py
